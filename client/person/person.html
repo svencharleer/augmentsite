@@ -1,0 +1,22 @@
+<template name="person">
+  <div class="person flex-row">
+
+    <div class="person_picture flex-item">
+      <img src="{{image_url}}"/>
+    </div>
+    <div class="person_description flex-item">
+    <h4>
+      {{name}}
+    </h4>
+
+      {{description}}
+      <br/>
+      <br/>
+      {{#if website_url}}
+      <i class="fa fa-globe" aria-hidden="true"></i> <span class="person_website"><a src="{{website_url}}">{{website_url}}</a></span>
+      {{/if}}
+    </div>
+
+  </div>
+
+</template>

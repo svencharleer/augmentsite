@@ -1,0 +1,187 @@
+/* CSS declarations go here */
+body{
+
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	color:#AAAAAA;
+	font-weight: normal;
+
+	text-align: left;
+	padding:0;
+	margin:0;
+	font-size: 75.0%;
+}
+
+h1, h2{
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size: 7em;
+    color: white;
+    margin-bottom: 0pt;
+    margin-top: 0.1em;
+    font-weight: bold;
+
+	;
+}
+h1 img{
+	width:100px;
+	margin-right: 20px;
+	    margin-bottom: -5px;
+
+}
+h2{
+	margin:0;
+	font-size: 2em;
+  color:white;
+	padding-bottom:1em;
+	margin-bottom:0pt;
+	display:block;
+
+
+}
+
+#top{
+
+    background-image:url("/images/background.jpg");
+    background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+ min-height:250px;
+width:100%;
+}
+
+#title{
+  text-align: center;
+}
+#main{
+	text-align: center;
+	margin:0;
+	padding-top:2em;
+	padding-bottom:2.2em;
+
+
+}
+#wrapper{
+
+}
+#content{
+
+	 display: flex;
+	 flex-direction: column;
+	margin: 0 auto;
+	color:black;
+
+
+
+		text-align: center;
+
+
+    font-size:1.2em;
+		margin:20px;
+
+}
+
+#contentBody
+{
+		 display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#contact{
+	text-align: center;
+	font-size: 1em;
+
+}
+
+
+#content a, #content a:hover, #content a:visited{
+	color:#ff00ff;
+	text-decoration: none;
+
+
+}
+#content a:hover{
+text-decoration: underline;
+
+}
+
+#me{
+  height: 5em;
+  display:	inline-block;
+  margin-top:10px;
+  margin-left:10px;
+
+}
+
+.section {
+	margin:.2em;
+	text-align:center;
+	font-size:1.5em;
+	display:inline-block;
+  width:180px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.section span{
+	display:block;
+	font-size:.7em;
+
+}
+
+#menu .selected {
+	font-weight: bold;
+}
+#menu a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#persons, #contact, #publications{
+	text-align: justify;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-bottom:10px;
+  color:black;
+	width:70%;
+	min-width:800px;
+	border-right: solid 2px #ffe3ff;
+  margin-right: 10px;
+
+}
+
+#persons h2, #contact h2, #publications h2{
+  color:#667580;
+	font-weight:normal;
+}
+
+#contact {
+	display:none;
+}
+
+#publications {
+	display: none;
+}
+
+.person, #contact p, #publications p{
+	max-width:800px;
+ }
+
+ #publications p{
+	 font-size: .8em;
+ }
+
+#twitter_side{
+
+}
+
+.hash {
+	font-size: .8em;
+}
+
+h2 strong{
+	font-weight:bold;
+}

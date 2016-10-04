@@ -1,0 +1,53 @@
+.person {
+  margin-bottom:20px;
+  padding-bottom:10px;
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.person_picture {
+
+  display:table-cell;
+}
+.person_picture img
+{
+  border-bottom:solid 4px #ff00ff;
+  width:150px;
+
+
+}
+
+.person h4{
+  font-size:1.2em;
+  margin-top:0;
+  margin-bottom:5px;
+  color:#252525;
+}
+.person_description
+{
+ width:600px;
+ font-size: .8em;
+}
+
+
+.flex-row
+{
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap
+}
+
+.flex-item {
+
+  justify-content: space-around;
+
+  margin-right:10px;
+  margin-left:10px;
+
+}

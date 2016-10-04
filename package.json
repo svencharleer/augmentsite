@@ -1,0 +1,11 @@
+{
+  "name": "augment",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}

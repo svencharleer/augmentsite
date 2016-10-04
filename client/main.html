@@ -1,0 +1,120 @@
+<head>
+  <script src="https://use.fontawesome.com/210903482f.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Augment / a Human-Computer Interaction Research Group - Computer Science Department - KU Leuven</title>
+</head>
+
+<body>
+<div id="top">
+    <img id="me" src="/images/KULEUVEN_CMYK_LOGO.png">
+<div id="title">
+
+  <h1><img src="/images/augment4.png">Augment</h1>
+  <h2><span class="hash">#</span>learning.analytics <span class="hash">#</span>recommender.systems <span class="hash">#</span>visualisation <span class="hash">#</span>e.health</h2>
+
+</div>
+</div>
+<div id="main">
+
+  <div id="wrapper">
+
+    <div id="content">
+      {{> menu}}
+
+    <div id="contentBody">
+
+      {{> persons}}
+      {{> publications}}
+      {{> contact}}
+      <div id="twitter_side">
+      <a class="twitter-timeline" data-lang="en" data-width="220" data-height="400" data-theme="light" data-link-color="#ff00ff" href="https://twitter.com/AugmentHCI">Tweets by AugmentHCI</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
+
+   </div>
+ </div>
+ </div>
+   <div id="contact">
+       Human-Computer Interactions groups - Computer Science Department - KU Leuven
+       <br/>
+Celestijnenlaan 200A,
+B-3001 Heverlee,
+BELGIUM<br/>
+Tel: +32-(0)16-32 70 66
+Fax: +32-(0)16-32 79 96
+       </div>
+
+</body>
+
+
+<template name="persons">
+  <div id="persons">
+  <h2>Faculty</h2>
+  {{#each persons "professor"}}
+    {{> person}}
+  {{/each}}
+  <h2>Research Managers</h2>
+  {{#each persons "researchmanager"}}
+    {{> person}}
+  {{/each}}
+  <h2>Postdocs</h2>
+  {{#each persons "postdoc"}}
+    {{> person}}
+  {{/each}}
+  <h2>Researchers</h2>
+  {{#each persons "phdstudent"}}
+    {{> person}}
+  {{/each}}
+  <h2>Former Members</h2>
+  {{#each persons "former"}}
+    {{name}}<br/>
+  {{/each}}
+</div>
+</template>
+
+<template name="contact">
+  <div id="contact">
+    <h2>About</h2>
+    <p>Research in the Augment group focuses on how end-users interact with personalised systems, such as  recommender systems, personalised search and targeted advertisement. The objective is to enable end-users to understand the rationale of such systems and to enable them to steer the personalisation process with input and feedback. The focus is on visualisation and interaction techniques, using the full spectrum of hardware from small mobile devices to large multi-touch displays. Applications include technology enhanced learning, media consumption, and digital humanities.</p>
+    <p>
+    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:augment@cs.kuleuven.be">augment@cs.kuleuven.be</a><br/>
+
+  <i class="fa fa-location-arrow" aria-hidden="true"></i>
+    Celestijnenlaan 200A,
+    B-3001 Leuven,
+    Belgium
+  </p>
+  </div>
+</template>
+
+<template name="menu">
+  <div id="menu">
+  <div class="section">
+  <a href="#" class="selected" id="btnPeople">People</a>
+
+  </div>
+  <div class="section">
+  <a href="#" id="btnPublications">Publications</a>
+
+  </div>
+  <div class="section">
+  <a href="#" id="btnContact">About</a>
+
+  </div>
+</div>
+</template>
+
+<template name="publications">
+  <div id="publications">
+    {{#each years}}
+    <h2>{{year}}</h2>
+    <p>
+    {{#each publications year}}
+
+      {{text}}<br/><br/>
+    {{/each}}
+  </p>
+    {{/each}}
+  </div>
+</template>
