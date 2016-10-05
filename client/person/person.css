@@ -1,7 +1,7 @@
 .person {
   margin-bottom:20px;
   padding-bottom:10px;
-  border-bottom: solid 1px #f0f0f0;
+
 }
 
 .person_picture {
@@ -10,9 +10,10 @@
 }
 .person_picture img
 {
-  border-bottom:solid 4px #ff00ff;
-  width:150px;
 
+  width:150px;
+  -webkit-filter: grayscale(60%); /* Chrome, Safari, Opera */
+      filter: grayscale(60%);
 
 }
 
@@ -26,6 +27,7 @@
 {
  width:600px;
  font-size: .8em;
+   border-bottom:solid 4px #ff00ff;
 }
 
 

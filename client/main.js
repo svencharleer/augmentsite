@@ -52,7 +52,7 @@ Template.publications.helpers({
 Template.persons.helpers({
   persons(role) {
     console.log(Persons.find({role:role}).fetch());
-    return Persons.find({role:role}, {sort:{sortforce:1,name:1}});
+    return Persons.find({role:role, disabled:{$ne:true}}, {sort:{sortforce:1,name:1}});
   },
 });
 

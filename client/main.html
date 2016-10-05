@@ -10,8 +10,11 @@
     <img id="me" src="/images/KULEUVEN_CMYK_LOGO.png">
 <div id="title">
 
-  <h1><img src="/images/augment4.png">Augment</h1>
-  <h2><span class="hash">#</span>learning.analytics <span class="hash">#</span>recommender.systems <span class="hash">#</span>visualisation <span class="hash">#</span>e.health</h2>
+  <h1><img src="/images/augment5.png">Augment</h1>
+  <h2>#<span class="emph">l</span>earning<span class="emph">a</span>nalytics
+    #<span class="emph">r</span>ecommender<span class="emph">s</span>ystems
+     #<span class="emph">v</span>isualisation
+    #e<span class="emph">h</span>ealth</h2>
 
 </div>
 </div>
@@ -28,45 +31,38 @@
       {{> publications}}
       {{> contact}}
       <div id="twitter_side">
-      <a class="twitter-timeline" data-lang="en" data-width="220" data-height="400" data-theme="light" data-link-color="#ff00ff" href="https://twitter.com/AugmentHCI">Tweets by AugmentHCI</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" data-lang="en" data-width="250" data-height="600" data-theme="light" data-link-color="#ff00ff" href="https://twitter.com/AugmentHCI">Tweets by AugmentHCI</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 
    </div>
  </div>
  </div>
-   <div id="contact">
-       Human-Computer Interactions groups - Computer Science Department - KU Leuven
-       <br/>
-Celestijnenlaan 200A,
-B-3001 Heverlee,
-BELGIUM<br/>
-Tel: +32-(0)16-32 70 66
-Fax: +32-(0)16-32 79 96
-       </div>
-
+   <div id="footer">
+       <i class="fa fa-creative-commons" aria-hidden="true"></i> Augment 2016
+     </div>
 </body>
 
 
 <template name="persons">
   <div id="persons">
-  <h2>Faculty</h2>
+  <h2>_Faculty</h2>
   {{#each persons "professor"}}
     {{> person}}
   {{/each}}
-  <h2>Research Managers</h2>
   {{#each persons "researchmanager"}}
+  <h2>_Research Managers</h2>
     {{> person}}
   {{/each}}
-  <h2>Postdocs</h2>
+  <h2>_Postdocs</h2>
   {{#each persons "postdoc"}}
     {{> person}}
   {{/each}}
-  <h2>Researchers</h2>
+  <h2>_Researchers</h2>
   {{#each persons "phdstudent"}}
     {{> person}}
   {{/each}}
-  <h2>Former Members</h2>
+  <h2>_Former Members</h2>
   {{#each persons "former"}}
     {{name}}<br/>
   {{/each}}
@@ -75,16 +71,29 @@ Fax: +32-(0)16-32 79 96
 
 <template name="contact">
   <div id="contact">
-    <h2>About</h2>
-    <p>Research in the Augment group focuses on how end-users interact with personalised systems, such as  recommender systems, personalised search and targeted advertisement. The objective is to enable end-users to understand the rationale of such systems and to enable them to steer the personalisation process with input and feedback. The focus is on visualisation and interaction techniques, using the full spectrum of hardware from small mobile devices to large multi-touch displays. Applications include technology enhanced learning, media consumption, and digital humanities.</p>
-    <p>
-    <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:augment@cs.kuleuven.be">augment@cs.kuleuven.be</a><br/>
-
+    <h2>About Augment</h2>
+    <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:augment@cs.kuleuven.be">augment@cs.kuleuven.be</a>
+      <br/>
   <i class="fa fa-location-arrow" aria-hidden="true"></i>
     Celestijnenlaan 200A,
     B-3001 Leuven,
     Belgium
+    <br/>
+  <i class="fa fa-phone" aria-hidden="true"></i> +32 16 327066 &nbsp;<i class="fa fa-fax" aria-hidden="true"></i> +32 16 327996
   </p>
+    <p id="about-description">Research in the Augment group focuses on how end-users interact with personalised systems, such as  recommender systems, personalised search and targeted advertisement. The objective is to enable end-users to understand the rationale of such systems and to enable them to steer the personalisation process with input and feedback. The focus is on visualisation and interaction techniques, using the full spectrum of hardware from small mobile devices to large multi-touch displays. Applications include technology enhanced learning, media consumption, and digital humanities.</p>
+
+
+
+  <div id="erik">
+    <div id="erik-picture">
+    <img src="/images/persons/erikduval.jpg"/>
+  </div>
+  <div id="erik-text">
+<p><em>The group was founded by Prof. Erik Duval (1965-2016). His legacy endures as he continues to serve as a role model for our community. The mark he made upon this world <a href="https://www.computer.org/csdl/trans/lt/2016/02/07498592.pdf">will long be remembered</a>.</em>
+  </p>
+</div>
+</div>
   </div>
 </template>
 

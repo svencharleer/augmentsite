@@ -3,7 +3,7 @@ body{
 
 	font-family: 'Open Sans', sans-serif;
 	background-color: white;
-	color:#AAAAAA;
+	color:#333;
 	font-weight: normal;
 
 	text-align: left;
@@ -58,7 +58,7 @@ width:100%;
 #main{
 	text-align: center;
 	margin:0;
-	padding-top:2em;
+	padding-top:0em;
 	padding-bottom:2.2em;
 
 
@@ -71,7 +71,7 @@ width:100%;
 	 display: flex;
 	 flex-direction: column;
 	margin: 0 auto;
-	color:black;
+
 
 
 
@@ -80,6 +80,7 @@ width:100%;
 
     font-size:1.2em;
 		margin:20px;
+		margin-top:5px;
 
 }
 
@@ -91,9 +92,11 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-#contact{
+#footer{
 	text-align: center;
 	font-size: 1em;
+
+
 
 }
 
@@ -145,17 +148,20 @@ text-decoration: underline;
 	margin-top:20px;
 	margin-bottom:20px;
 	padding-bottom:10px;
-  color:black;
+
 	width:70%;
 	min-width:800px;
 	border-right: solid 2px #ffe3ff;
   margin-right: 10px;
+	padding-right:10px;
 
 }
 
 #persons h2, #contact h2, #publications h2{
   color:#667580;
 	font-weight:normal;
+	text-transform: lowercase;
+
 }
 
 #contact {
@@ -178,10 +184,55 @@ text-decoration: underline;
 
 }
 
-.hash {
-	font-size: .8em;
+
+.emph {
+	color:#76e3ff;
 }
 
 h2 strong{
 	font-weight:bold;
+}
+
+#erik {
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: lleft;
+margin-top:40px;
+
+}
+#erik-picture {
+
+	height:auto;
+	display:flex-item;
+	margin-right:20px;
+	width:300px;
+	margin-top:0;
+
+}
+#erik-picture img{
+	width:100%;
+}
+#erik-text {
+	width:300px;
+	display:flex-item;
+	margin-top:0;
+
+
+
+}
+
+#erik-text p{
+
+	padding:10px;
+	border-bottom:solid 4px #ff00ff;
+}
+
+p{
+	margin-top:0;
+}
+
+#about-description
+{
+	margin-top:30px;
 }
